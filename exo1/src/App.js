@@ -8,10 +8,12 @@ function App() {
   const categoryInits = [
     { id: "1", title: "homme", description: "Vetement homme", image: "1001" },
     { id: "2", title: "femme", description: "Vetement femme", image: "1002" },
+    { id: "3", title: "Enfant", description: "Vetement enfant", image: "1003" },
+    { id: "4", title: "Baby", description: "Vetement baby", image: "1004" },
   ];
 
   const categoryElements = categoryInits.map((category) => (
-    <div className="col-12 col-lg-3 " key={category.id}>
+    <div className="col-12 col-lg-3" key={category.id}>
       <Cards
         title={category.title}
         description={category.description}
@@ -23,7 +25,7 @@ function App() {
   return (
     <>
       <Page1 />
-      <div className="row">{categoryElements}</div>
+      <div className="row container">{categoryElements}</div>
     </>
   );
 }
