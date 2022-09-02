@@ -3,6 +3,7 @@ import Page1 from "./components/page/page1";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import Cards from "./components/cards/cards";
+import Contact from "./components/contactForm/contactForm";
 
 function App() {
   const categoryInits = [
@@ -26,6 +27,7 @@ function App() {
     <>
       <Page1 />
       <div className="row container">{categoryElements}</div>
+      <Contact/>
     </>
   );
 }
