@@ -6,10 +6,10 @@ import Cards from "./components/cards/cards";
 
 function App() {
   const categoryInits = [
-    { id: "1", title: "homme", description: "Vetement homme", image: "1001" },
-    { id: "2", title: "femme", description: "Vetement femme", image: "1002" },
-    { id: "3", title: "Enfant", description: "Vetement enfant", image: "1003" },
-    { id: "4", title: "Baby", description: "Vetement baby", image: "1004" },
+    { id: "1", title: "homme", description: "Vetement homme", image: "./assets/img/homme.jfif" },
+    { id: "2", title: "femme", description: "Vetement femme", image: "/assets/img/femme.jpg" },
+    { id: "3", title: "Enfant", description: "Vetement enfant", image: "/assets/img/enfant.jpg" },
+    { id: "4", title: "Baby", description: "Vetement baby", image: "/assets/img/baby.webp" },
   ];
 
   const categoryElements = categoryInits.map((category) => (
